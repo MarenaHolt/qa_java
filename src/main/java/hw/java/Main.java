@@ -33,6 +33,15 @@ public class Main {
         String result = a == 3 ? "three" : "not three";
         System.out.println(result);
 
+        double e = subtraction(1.2, 8.6);
+        double f = sum(3.5, 7);
+        double g = multiplication(78.6, 4.4);
+        double h = division(5.5, 1);
+
+        System.out.println(e + f + g + h);
+
+        byte result1 = (byte) (128 + 1);
+        System.out.println(result1);
     }
 
     static int sum(int a, int b){
@@ -48,6 +57,22 @@ public class Main {
     }
 
     static int subtraction(int a, int b){
+        return a - b;
+    }
+
+    static double sum(double a, int b){
+        return a + b;
+    }
+
+    static double multiplication(double a, double b){
+        return a * b;
+    }
+
+    static double division(double a, double b){
+        return a / b;
+    }
+
+    static double subtraction(double a, double b){
         return a - b;
     }
 }
